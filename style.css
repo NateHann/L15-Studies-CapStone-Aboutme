@@ -66,81 +66,6 @@ a:hover {
     cursor: default;
 }
 
-
-/* Hamburger menu styling */
-
-#hamburger-nav {
-  display: none; /* Initially hide the hamburger navigation on larger screens */
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0%;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px; /* Display the menu links when the menu is open */
-}
-
-/* Styling for the open state of the hamburger icon */
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0; /* Hide the middle span in the open state */
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-/* Reset transformation for the first span when not in the open state */
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
 /*Sections*/
 section{
     padding: top 4vh;
@@ -154,8 +79,6 @@ section{
 }
 
 /*Profile*/
-/* Profile Section Styling */
-
 /* Container for the entire profile section */
 #profile {
   display: flex;
@@ -163,7 +86,6 @@ section{
   gap: 5rem; 
   height: 80vh; 
 }
-
 /* Container for the profile picture */
 .section__pic-container {
   display: flex;
@@ -171,55 +93,36 @@ section{
   width: 400px; 
   margin: auto 0; 
 }
-
 /* Text container within the profile section */
 .section__text {
   align-self: center;
   text-align: center;
 }
-
 /* Styling for paragraphs within the profile text */
 .section__text p {
   font-weight: 600;
 }
-
 /* Additional styling for the first paragraph in the profile text */
 .section__text__p1 {
   text-align: center;
 }
-
 /* Additional styling for the second paragraph in the profile text */
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-
 /* Styling for the title within the profile section */
 .title {
   font-size: 3rem;
   text-align: center;
 }
-
 /* Container for social icons */
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-/* Additional styling for social icons */
-{
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* Container for social icons with adjusted margin-top */
 #socials-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+  font-size: 3rem; /* Move the font-size declaration here */
 }
 
 /* Icons Styling */
@@ -230,10 +133,7 @@ section{
   height: 2rem; 
 }
 
-  
-
 /* Buttons Styling */
-
 /* Container for buttons */
 .btn-container {
   display: flex;
@@ -241,11 +141,9 @@ section{
   gap: 1rem; 
 }
 
-/* Styling for buttons */
-
 .btn{
   font-weight: 600; 
-  transition: all 300ms ease; /* Add transition effect for smooth animation */
+  transition: all 300ms ease; 
   padding: 1rem; 
   width: 8rem; 
   border-radius: 2rem;
@@ -256,40 +154,33 @@ section{
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid; 
 }
-
 /* Styling on hover for buttons with color variants */
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer; 
 }
-
 /* Styling for buttons with color variants on hover */
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(173, 173, 173);
   color: white;
 }
-
 /* Additional styling for button with color variant 1 on hover */
 .btn-color-1:hover {
   background: rgb(82, 82, 82); 
 }
-
 /* Styling for button with color variant 2 */
 .btn-color-2 {
   background: none; 
 }
-
 /* Styling on hover for button with color variant 2 */
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid; 
 }
-
 /* Adjusted gap for the button container */
 .btn-container {
   gap: 1rem; 
 }
-
 
 /* ABOUT SECTION */
 
@@ -300,50 +191,42 @@ section{
   align-items: center;
   text-align: center;
 }
-
 /* Styling for individual testimonials */
 .testimonial {
   display: none;
   max-width: 400px;
   margin: 0 auto;
 }
-
 /* Styling to make the active testimonial visible */
 .testimonial.active {
   display: block;
 }
-
 /* Styling for containers holding about information */
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
 /* Styling for the container holding additional details about the section */
 .about-details-container {
   justify-content: center;
   flex-direction: column;
 }
-
 /* Common styling for both the about containers and details container */
 .about-containers,
 .about-details-container {
   display: flex;
 }
-
 /* Styling for the about picture with rounded corners */
 .about-pic {
   border-radius: 2rem;
 }
-
 /* Styling for the arrow used in the section */
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
-
 /* Styling for the details container inside the about section */
 .details-container {
   padding: 1.5rem;
@@ -354,13 +237,11 @@ section{
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
 /* Styling for the container holding multiple sections */
 .section-container {
   gap: 4rem;
   height: 80%;
 }
-
 /* Styling for the picture container in the section */
 .section__pic-container {
   height: 400px;
@@ -374,7 +255,6 @@ section{
 #experience {
   position: relative;
 }
-
 /* Styling for the sub-title in the experience section */
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -382,14 +262,12 @@ section{
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
-
 /* Styling for the container of experience details */
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
 /* Styling for the container of articles in the experience section */
 .article-container {
   display: flex;
@@ -400,7 +278,6 @@ section{
   justify-content: space-around;
   margin: 0; /* Specify the margin value */
 }
-
 /* Styling for individual articles in the experience section */
 article {
   display: flex;
@@ -408,34 +285,25 @@ article {
   justify-content: space-around;
   gap: 0.5rem;
 }
-
 /* Styling for icons within articles in the experience section */
 article .icon {
   cursor: default;
 }
-
 /* Table Styling for the experience section */
 .table-style {
   border-collapse: separate;
   border-spacing: 10px; 
-  margin: 0px;
+  margin: 0;
+  width: 100%; 
 }
-
+/* Styling for table cells in the experience section */
 .table-style th, .table-style td {
-  padding: 8px;
+  padding: 15px;  
   text-align: left;
-  white-space: normal; 
+  max-width: 700px; 
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-/* Specify the closing brace for the article-container styling */
-}
-
-/* Additional styling for table cells in the experience section */
-.table-style th, .table-style td {
-  padding: 35px;
-  text-align: left;
-}
-
 /* Styling for bold font in table headers */
 .table-style th {
   font-weight: bold;
@@ -447,31 +315,28 @@ article .icon {
 #projects {
   position: relative;
 }
-
 /* Styling for the color container in the projects section */
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
-
 /* Styling for project images in the projects section */
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
 }
-
 /* Styling for project titles in the projects section */
 .project-title {
   margin: 1rem;
   color: black;
 }
-
 /* Styling for project buttons in the projects section */
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 
 /* CONTACT */
 
@@ -482,21 +347,18 @@ article .icon {
   align-items: center;
   text-align: center;
 }
-
 /* Styling for the contact form */
 #contact-form {
   width: 60%; 
   max-width: 400px; 
   margin: 0 auto; 
 }
-
 /* Styling for labels in the contact form */
 #contact-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
-
 /* Styling for input and textarea in the contact form */
 #contact-form input,
 #contact-form textarea {
@@ -505,7 +367,6 @@ article .icon {
   box-sizing: border-box;
   margin-bottom: 16px;
 }
-
 /* Styling for the upper container in the contact section */
 .contact-info-upper-container {
   display: flex;
@@ -517,7 +378,6 @@ article .icon {
   margin: 2rem auto;
   padding: 0.5rem;
 }
-
 /* Styling for the container holding contact information */
 .contact-info-container {
   display: flex;
@@ -526,17 +386,14 @@ article .icon {
   gap: 0.5rem;
   margin: 1rem;
 }
-
 /* Styling for the paragraphs in the contact information container */
 .contact-info-container p {
   font-size: larger;
 }
-
 /* Styling for the contact icons */
 .contact-icon {
   cursor: default;
 }
-
 /* Styling for the email icon */
 .email-icon {
   height: 2.5rem;
@@ -549,7 +406,6 @@ footer {
   height: 26vh;
   margin: 0 1rem;
 }
-
 /* Styling for paragraphs within the footer */
 footer p {
   text-align: center;
