@@ -299,7 +299,7 @@ article .icon {
 .table-style th, .table-style td {
   padding: 15px;  
   text-align: left;
-  max-width: 500px; 
+  max-width: 550px; 
   overflow: hidden;
   white-space: nowrap;
 }
