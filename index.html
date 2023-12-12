@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Metadata for character set and responsive design -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Title of the webpage -->
     <title>Nate Hann</title>
-    
+
     <!-- Linking external stylesheets for styling -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
     <!-- Desktop navigation section -->
     <nav id="desktop-nav">
-        <div class="logo">Nate Hann</div>
-        <div>
-            <ul class="nav-links">
-                <!-- Navigation links for different sections of the website -->
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>         
-            </ul>
-        </div>
-    </nav>
-        </div>
-        </div>
+      <div class="logo">Nate Hann</div>
+      <div>
+        <ul class="nav-links">
+          <!-- Navigation links for different sections of the website -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Profile section -->
     <section id="profile">
-        <div class="section__pic-container">
-            <!-- Profile picture -->
-            <img src="./Assets/profile-pic.png" alt="AI Nathan profilepic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">Nathan Hannaford</h1>
-            <p class="section__text__p2">Aspiring Full Stack Web & Application Dev</p>
-        
-            <!-- Container for buttons -->
-            <div class="btncontainer">
-                <div class="btn-container">
-                    <!-- Button to download CV -->
-                    <button class="btn btn-color-2" onclick="window.open('./Assets/readme.txt')">
-                        Download CV
-                    </button>
-                    <!-- Button link to Contact Me page -->
-                    <button class="btn btn-color-1">
-                        <a href="contact.html" onclick="window.open('contact.html')">Contact Me</a>
-                    </button>
-                </div>
+      <div class="section__pic-container">
+        <!-- Profile picture -->
+        <img src="./Assets/profile-pic.png" alt="AI Nathan profile pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nathan Hannaford</h1>
+        <p class="section__text__p2">
+          Aspiring Full Stack Web & Application Dev
+        </p>
 
-                <!-- Container for social media icons -->
-                <div id="socials-container">
-                    <!-- LinkedIn icon with link -->
-                    <img src="./Assets/linkedin.png" alt="linkedin icon" class="icon" onclick="window.open('https://www.linkedin.com/in/nathan-hannaford-6306a2162')">
-                    <!-- GitHub icon with link -->
-                    <img src="./Assets/github.png" alt="github icon" class="icon" onclick="window.open('https://github.com/NateHann')">
-                </div>
-            </div>
+        <!-- Container for buttons -->
+        <div class="btncontainer">
+          <div class="btn-container">
+            <!-- Button to download CV -->
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./Assets/readme.txt')"
+            >
+              Download CV
+            </button>
+            <!-- Button link to Contact Me page -->
+            <button class="btn btn-color-1">
+              <a href="contact.html" onclick="window.open('contact.html')"
+                >Contact Me</a
+              >
+            </button>
+          </div>
+
+          <!-- Container for social media icons -->
+          <div id="socials-container">
+            <!-- LinkedIn icon with link -->
+            <img
+              src="./Assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/nathan-hannaford-6306a2162')"
+            />
+            <!-- GitHub icon with link -->
+            <img
+              src="./Assets/github.png"
+              alt="GitHub icon"
+              class="icon"
+              onclick="window.open('https://github.com/NateHann')"
+            />
+          </div>
         </div>
+      </div>
     </section>
- <!-- JavaScript script -->
+
+    <!-- JavaScript script -->
     <script src="script.js"></script>
-</body>
-<footer>
-    <!-- Footer navigation -->
-    <nav>
+
+    <!-- Footer section -->
+    <footer>
+      <!-- Footer navigation -->
+      <nav>
         <div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>         
-            </ul>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-    <!-- Footer text -->
-    <p>This website was created for Illustration purposes only - This forms part of a Capstone project in my studies. - Nathan Hannaford</p>
-</footer>
+      </nav>
+      <!-- Footer text -->
+      <p>
+        This website was created for Illustration purposes only - This forms
+        part of a Capstone project in my studies. - Nathan Hannaford
+      </p>
+    </footer>
+  </body>
 </html>
