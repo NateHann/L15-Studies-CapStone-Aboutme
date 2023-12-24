@@ -13,8 +13,8 @@ function rotateTestimonials() {
   showTestimonial(currentIndex);
 }
 
-// Rotate testimonials every 5 seconds (adjust as needed)
-setInterval(rotateTestimonials, 5000);
+// Rotate testimonials every 5 seconds
+setInterval(rotateTestimonials, 3000);
 
-// Show the first testimonial initially
+// Start with initial testimonial 
 showTestimonial(currentIndex);

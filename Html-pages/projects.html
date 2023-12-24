@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nate.Hann - Projects</title>
-
-    <!--Stylesheets  -->
     <link rel="stylesheet" href="../Styling/style.css" />
   </head>
-
   <body>
     <!-- Navigation section -->
     <section>
-      <!-- Normal navigation -->
+      <!-- Main navigation with links to different pages & dropdown-->
       <nav id="desktop-nav">
-        <div class="logo">Nate Hann</div>
+        <div class="logo">{Nate;Hann}</div>
         <div>
           <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./experience.html">Experience</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
+            <!--DropDown-->
+            <li class="dropdown">
+              <a href="javascript:void(0)">Content</a>
+              <ul class="dropdown-content">
+                <li><a href="./blog.html">Blog Posts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./saved.html">Saved Items</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
@@ -116,12 +121,20 @@
       <nav>
         <div>
           <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./experience.html">Experience</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
+            <!--DropDown-->
+            <li class="dropdown">
+              <a href="javascript:void(0)">Content</a>
+              <ul class="dropdown-content">
+                <li><a href="./blog.html">Blog Posts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./saved.html">Saved Items</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
@@ -132,6 +145,7 @@
       </p>
     </footer>
     <!-- JavaScript script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../jScript/script.js"></script>
   </body>
 </html>

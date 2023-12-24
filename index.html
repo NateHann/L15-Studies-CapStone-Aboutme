@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Metadata for character set and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title of the webpage -->
     <title>Nate Hann</title>
-
-    <!-- Linking external stylesheets for styling -->
     <link rel="stylesheet" href="Styling/style.css" />
   </head>
-
   <body>
-    <!-- Desktop navigation section -->
     <nav id="desktop-nav">
-      <div class="logo">Nate Hann</div>
-      <nav>
-        <div>
-          <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./Html-pages/about.html">About</a></li>
-            <li><a href="./Html-pages/experience.html">Experience</a></li>
-            <li><a href="./Html-pages/projects.html">Projects</a></li>
-            <li><a href="./Html-pages/contact.html">Contact</a></li>
+      <div class="logo">{Nate;Hann}</div>
+      <!-- Main navigation with links to different pages & dropdown-->
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./Html-pages/about.html">About</a></li>
+        <li><a href="./Html-pages/experience.html">Experience</a></li>
+        <li><a href="./Html-pages/projects.html">Projects</a></li>
+        <li><a href="./Html-pages/contact.html">Contact</a></li>
+        <!--DropDown-->
+        <li class="dropdown">
+          <a href="javascript:void(0)">Content</a>
+          <ul class="dropdown-content">
+            <li><a href="./Html-pages/blog.html">Blog Posts</a></li>
+            <li><a href="./Html-pages/gallery.html">Gallery</a></li>
+            <li><a href="./Html-pages/saved.html">Saved Items</a></li>
           </ul>
-        </div>
-      </nav>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Profile section -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <!-- Profile picture -->
-        <img src="./Assets/profile-pic.png" alt="AI Nathan profile pic" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nathan Hannaford</h1>
-        <p class="section__text__p2">
-          Aspiring Full Stack Web & Application Dev
-        </p>
-
-        <!-- Container for buttons -->
-        <div class="btncontainer">
+    <!-- Profile section with image and introduction -->
+    <div id="particles-js">
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./Assets/profile-pic.png" alt="Nathan profile pic" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Nathan Hannaford</h1>
+          <p class="section__text__p2">
+            Aspiring Full Stack Web & Application Dev
+          </p>
+          <!-- Container for action buttons - CV download and contact page link -->
           <div class="btn-container">
-            <!-- Button to download CV -->
             <button
               class="btn btn-color-2"
               onclick="window.open('./Assets/readme.txt')"
             >
               Download CV
             </button>
-            <!-- Button link to Contact Me page -->
             <button class="btn btn-color-1">
-              <a href="contact.html" onclick="window.open('contact.html')"
-                >Contact Me</a
-              >
+              <a href="./Html-pages/contact.html">Contact Me</a>
             </button>
-          </div>
-
-          <!-- Container for social media icons -->
-          <div id="socials-container">
-            <!-- LinkedIn icon with link -->
-            <img
-              src="./Assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon"
-              onclick="window.open('https://www.linkedin.com/in/nathan-hannaford-6306a2162')"
-            />
-            <!-- GitHub icon with link -->
-            <img
-              src="./Assets/github.png"
-              alt="GitHub icon"
-              class="icon"
-              onclick="window.open('https://github.com/NateHann')"
-            />
+            <!-- Social media icons section -->
+            <div id="socials-container">
+              <img
+                src="./Assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon"
+                onclick="window.open('https://www.linkedin.com/in/nathan-hannaford-6306a2162')"
+              />
+              <img
+                src="./Assets/github.png"
+                alt="GitHub icon"
+                class="icon"
+                onclick="window.open('https://github.com/NateHann')"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer section -->
+      </section>
+    </div>
+    <!-- Footer section with navigation and and dropdown-->
     <footer>
-      <!-- Footer navigation -->
-      <nav>
-        <div>
-          <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./Html-pages/about.html">About</a></li>
-            <li><a href="./Html-pages/experience.html">Experience</a></li>
-            <li><a href="./Html-pages/projects.html">Projects</a></li>
-            <li><a href="./Html-pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
+      <nav id="desktop-nav">
+        <!-- Main navigation with links to different pages -->
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./Html-pages/about.html">About</a></li>
+          <li><a href="./Html-pages/experience.html">Experience</a></li>
+          <li><a href="./Html-pages/projects.html">Projects</a></li>
+          <li><a href="./Html-pages/contact.html">Contact</a></li>
+          <!--DropDown-->
+          <li class="dropdown">
+            <a href="javascript:void(0)">Content</a>
+            <ul class="dropdown-content">
+              <li><a href="./Html-pages/blog.html">Blog Posts</a></li>
+              <li><a href="./Html-pages/gallery.html">Gallery</a></li>
+              <li><a href="./Html-pages/saved.html">Saved Items</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
-      <!-- Footer text -->
       <p>
         This website was created for Illustration purposes only - This forms
         part of a Capstone project in my studies. - Nathan Hannaford
       </p>
     </footer>
-    <!-- JavaScript script -->
+
+    <!-- JavaScript script tags -->
     <script src="./jScript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </body>
 </html>

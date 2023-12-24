@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nate.Hann - About Me</title>
-
-    <!-- Styling -->
     <link rel="stylesheet" href="../Styling/style.css" />
+  </head>
 
   <body>
-    <!-- Navigation section -->
     <section>
-      <!-- Desktop navigation menu -->
+      <!-- Main navigation with links to different pages & dropdown-->
       <nav id="desktop-nav">
-        <div class="logo">Nate Hann</div>
-        <div>
-          <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./experience.html">Experience</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
+        <div class="logo">{Nate;Hann}</div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <!--DropDown-->
+          <li class="dropdown">
+            <a href="javascript:void(0)">Content</a>
+            <ul class="dropdown-content">
+              <li><a href="./blog.html">Blog Posts</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./saved.html">Saved Items</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </section>
+
     <!-- About Me section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -44,7 +49,7 @@
 
         <!-- Container for about section -->
         <div class="about-details-container">
-          <!-- Professional details -->
+          <!-- Professional Bio Section -->
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -53,7 +58,6 @@
                 class="icon"
               />
               <h3>Professional Bio</h3>
-              <!-- Professional bio text -->
               <p>
                 Hello, I'm Nathan Hannaford, an Account Manager with over 5
                 years of expertise in the office automation industry. Although
@@ -68,7 +72,8 @@
                 technology and innovation!
               </p>
             </div>
-            <!-- Hobbies and interests details -->
+
+            <!-- Hobbies and interests Section -->
             <div class="details-container">
               <img
                 src="../Assets/lifestyle.png"
@@ -76,7 +81,6 @@
                 class="icon"
               />
               <h3>Hobbies & Interests</h3>
-              <!-- Hobbies and interests text -->
               <p>
                 I find joy in gaming, mostly on PCs with titles like Valorant,
                 CS, Dota, Apex, Rocket League, to name a few, and am very
@@ -95,7 +99,7 @@
           <!-- Testimonials section -->
           <div class="details-container">
             <h2>Testimonials</h2>
-            <!-- Testimonial carousel -->
+            <!-- Testimonial carousel - every 3 second change intervaL -->
             <div id="testimonial-carousel">
               <!-- Testimonial 1 -->
               <div class="testimonial">
@@ -109,8 +113,7 @@
               <div class="testimonial">
                 <p>
                   "The collaboration with Nathan was seamless. His creativity
-                  and expertise shone through. Our internal network and
-                  telephony woes are a thing of the past."
+                  and expertise shone through.
                 </p>
                 <cite>- Darryl - Manager, Auto Body Works</cite>
               </div>
@@ -127,27 +130,36 @@
         </div>
       </div>
     </section>
+
     <!-- Footer section -->
     <footer>
-      <nav>
-        <div>
-          <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./experience.html">Experience</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
+      <nav id="desktop-nav">
+        <!-- Main navigation with links to different pages & dropdown-->
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <!--DropDown-->
+          <li class="dropdown">
+            <a href="javascript:void(0)">Content</a>
+            <ul class="dropdown-content">
+              <li><a href="./blog.html">Blog Posts</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./saved.html">Saved Items</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
       <p>
         This website was created for Illustration purposes only - This forms
         part of a Capstone project in my studies. - Nathan Hannaford
       </p>
     </footer>
-        <!-- JavaScript script -->
-    <!-- JS scripts -->
+
+    <!-- JavaScript scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../jScript/script.js"></script>
     <script src="../jScript/carousel-script.js"></script>
   </body>

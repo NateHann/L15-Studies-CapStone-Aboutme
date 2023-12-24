@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nate.Hann - Contact</title>
-
-    <!-- Linking external stylesheets for styling -->
     <link rel="stylesheet" href="../Styling/style.css" />
   </head>
+
   <body>
     <!-- Navigation section -->
     <section>
-      <!-- Desktop navigation menu -->
+      <!-- Main navigation with links to different pages & dropdown-->
       <nav id="desktop-nav">
-        <div class="logo">Nate Hann</div>
+        <div class="logo">{Nate;Hann}</div>
         <div>
           <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./experience.html">Experience</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
+            <!--DropDown-->
+            <li class="dropdown">
+              <a href="javascript:void(0)">Content</a>
+              <ul class="dropdown-content">
+                <li><a href="./blog.html">Blog Posts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./saved.html">Saved Items</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
     </section>
+
     <!-- Contact section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
 
-      <!-- Contact Information -->
+      <!-- Contact Information Section -->
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -48,14 +56,14 @@
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com/in/nathan-hannaford-6306a2162/s"
+            <a href="https://www.linkedin.com/in/nathan-hannaford-6306a2162/"
               >LinkedIn</a
             >
           </p>
         </div>
       </div>
 
-      <!-- Contact form -->
+      <!-- Contact form / contact table - No Function built in to obtain details-->
       <form id="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -103,15 +111,24 @@
 
     <!-- Footer section -->
     <footer>
+      <!-- Main navigation with links to different pages & dropdown-->
       <nav>
         <div>
           <ul class="nav-links">
-            <!-- Navigation links for different sections of the website -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./experience.html">Experience</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
+            <!--DropDown-->
+            <li class="dropdown">
+              <a href="javascript:void(0)">Content</a>
+              <ul class="dropdown-content">
+                <li><a href="./blog.html">Blog Posts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./saved.html">Saved Items</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
@@ -122,6 +139,7 @@
     </footer>
 
     <!-- JavaScript script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../jScript/script.js"></script>
   </body>
 </html>

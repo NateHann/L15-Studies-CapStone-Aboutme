@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nate.Hann - Experience</title>
+    <title>Nate.Hann - Saved for Later</title>
     <link rel="stylesheet" href="../Styling/style.css" />
   </head>
-
   <body>
     <!-- Navigation section -->
     <section>
@@ -32,65 +31,29 @@
           </ul>
         </div>
       </nav>
+      <!-- Saved for Later section-->
     </section>
-
-    <!-- Experience section -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Job Experience</h1>
-      +
-
-      <!-- Container for job experience details -->
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="article-container">
-              <!-- Table displaying job experience details -->
-              <section>
-                <table class="table-style">
-                  <thead>
-                    <tr>
-                      <th>Company</th>
-                      <th>Position</th>
-                      <th>Industry</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>RadioWaves</td>
-                      <td>Technical Supervisor</td>
-                      <td>High-End Mobile Audio & Mobile Audio Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>Vox</td>
-                      <td>Team Leader & Business Development Manager</td>
-                      <td>Connectivity & Telephony</td>
-                    </tr>
-                    <tr>
-                      <td>PureGroup</td>
-                      <td>Office Automation Specialist</td>
-                      <td>Connectivity, Telephony & Office Automation</td>
-                    </tr>
-                    <tr>
-                      <td>Daisy - Current</td>
-                      <td>Account Manager</td>
-                      <td>
-                        Software, Managed I.T, Connectivity, Networking,
-                        Telephony & OA
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
-            </div>
-          </div>
-        </div>
+    <p class="section__text__p1">Explore your saved for later items</p>
+    <h1 class="title">Saved Items</h1>
+    <div class="saved-img-container">
+      <h3>Images</h3>
+      <button id="clear-saved-images" class="clearimg-but">
+        Clear Saved Images
+      </button>
+      <div id="saved-items-container">
+        <!-- Saved images will be displayed here -->
       </div>
-    </section>
+    </div>
 
-    <!-- Footer section -->
+    <div class="saved-blog-container">
+      <h3>Blog Posts</h3>
+      <button id="clear-saved-blogposts" class="clearblog-but">
+        Clear Saved BlogPosts
+      </button>
+      <div id="saved-items-container-blog"></div>
+    </div>
+
     <footer>
-      <!-- Main navigation with links to different pages & dropdown-->
       <nav>
         <div>
           <ul class="nav-links">
@@ -111,14 +74,12 @@
           </ul>
         </div>
       </nav>
-      <!-- Footer text -->
       <p>
         This website was created for Illustration purposes only - This forms
         part of a Capstone project in my studies. - Nathan Hannaford
       </p>
     </footer>
-
-    <!-- JavaScript scripts -->
+    <!-- JS scripts -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../jScript/script.js"></script>
   </body>

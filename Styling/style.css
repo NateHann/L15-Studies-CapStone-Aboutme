@@ -1,232 +1,214 @@
-/* General styling for the website */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-/* Resetting default margin and padding for all elements */
+/* Default margin and padding for all elements */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Setting the default font family for the entire body */
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Ensuring smooth scrolling behavior for the entire HTML document */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Styling for paragraph elements */
 p {
-    color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
 
 /* Adding transition effect for anchor tags and buttons */
-a, .btn {
-    transition: all 0.3s ease;
+a,
+.btn {
+  transition: all 0.3s ease;
 }
 
 /* Desktop Navigation Styles */
-nav, .nav-links {
-    display: flex;
+nav,
+.nav-links {
+  display: flex;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 /* Styling on hover for anchor tags */
 a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .logo:hover {
-    cursor: default;
+  cursor: default;
 }
 
-/*Sections*/
-section{
-    padding: top 4vh;
-    margin: 0rem 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+/* Sections */
+section {
+  padding-top: 4vh;
+  margin: 0rem 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
-.section-container{
-    display: flex;
+.section-container {
+  display: flex;
 }
 
-/*Profile*/
-/* Container for the entire profile section */
+/* Profile */
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem; 
-  height: 80vh; 
+  gap: 5rem;
+  height: 80vh;
 }
-/* Container for the profile picture */
 .section__pic-container {
   display: flex;
-  height: 400px; 
-  width: 400px; 
-  margin: auto 0; 
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
-/* Text container within the profile section */
 .section__text {
   align-self: center;
   text-align: center;
 }
-/* Styling for paragraphs within the profile text */
 .section__text p {
   font-weight: 600;
 }
-/* Additional styling for the first paragraph in the profile text */
 .section__text__p1 {
   text-align: center;
 }
-/* Additional styling for the second paragraph in the profile text */
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-/* Styling for the title within the profile section */
 .title {
   font-size: 3rem;
   text-align: center;
 }
-/* Container for social icons */
 #socials-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
-  font-size: 3rem; /* Move the font-size declaration here */
+  font-size: 3rem;
 }
 
 /* Icons Styling */
-
-/* Styling for icons */
 .icon {
-  cursor: pointer; 
-  height: 2rem; 
+  cursor: pointer;
+  height: 2rem;
 }
 
 /* Buttons Styling */
-/* Container for buttons */
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
-.btn{
-  font-weight: 600; 
-  transition: all 300ms ease; 
-  padding: 1rem; 
-  width: 8rem; 
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
   border-radius: 2rem;
 }
 
-/* Styling for button with color variant 1 */
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid; 
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
-/* Styling on hover for buttons with color variants */
+
 .btn-color-1:hover,
 .btn-color-2:hover {
-  cursor: pointer; 
+  cursor: pointer;
 }
-/* Styling for buttons with color variants on hover */
+
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(173, 173, 173);
   color: white;
 }
-/* Additional styling for button with color variant 1 on hover */
+
 .btn-color-1:hover {
-  background: rgb(82, 82, 82); 
+  background: rgb(82, 82, 82);
 }
-/* Styling for button with color variant 2 */
+
 .btn-color-2 {
-  background: none; 
+  background: none;
 }
-/* Styling on hover for button with color variant 2 */
+
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid; 
-}
-/* Adjusted gap for the button container */
-.btn-container {
-  gap: 1rem; 
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 /* ABOUT SECTION */
-
-/* Styling for the testimonial carousel container */
 #testimonial-carousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-/* Styling for individual testimonials */
+
 .testimonial {
   display: none;
   max-width: 400px;
   margin: 0 auto;
 }
-/* Styling to make the active testimonial visible */
+
 .testimonial.active {
   display: block;
 }
-/* Styling for containers holding about information */
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-/* Styling for the container holding additional details about the section */
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
 }
-/* Common styling for both the about containers and details container */
+
 .about-containers,
 .about-details-container {
   display: flex;
 }
-/* Styling for the about picture with rounded corners */
+
 .about-pic {
   border-radius: 2rem;
 }
-/* Styling for the arrow used in the section */
+
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
-/* Styling for the details container inside the about section */
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -236,12 +218,12 @@ section{
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-/* Styling for the container holding multiple sections */
+
 .section-container {
   gap: 4rem;
   height: 80%;
 }
-/* Styling for the picture container in the section */
+
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -249,116 +231,101 @@ section{
 }
 
 /* EXPERIENCE SECTION */
-
-/* Styling for the experience section container */
 #experience {
   position: relative;
 }
-/* Styling for the sub-title in the experience section */
+
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
-/* Styling for the container of experience details */
+
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-/* Styling for the container of articles in the experience section */
+
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 0.5rem;
-  justify-content: space-around;
-  margin: 0; /* Specify the margin value */
+  align-items: center;
 }
-/* Styling for individual articles in the experience section */
+
 article {
   display: flex;
-  width: 10rem;
   justify-content: space-around;
-  gap: 0.5rem;
 }
-/* Styling for icons within articles in the experience section */
+
 article .icon {
   cursor: default;
 }
-/* Table Styling for the experience section */
+
 .table-style {
   border-collapse: separate;
-  border-spacing: 10px; 
+  border-spacing: 10px;
   margin: 0;
-  width: 100%; 
+  width: 100%;
 }
-/* Styling for table cells in the experience section */
-.table-style th, .table-style td {
-  padding: 15px;  
+
+.table-style th,
+.table-style td {
+  padding: 15px;
   text-align: left;
-  max-width: 550px; 
+  max-width: 550px;
   overflow: hidden;
   white-space: nowrap;
 }
-/* Styling for bold font in table headers */
+
 .table-style th {
   font-weight: bold;
 }
 
 /* PROJECTS SECTION */
-
-/* Styling for the projects section container */
 #projects {
   position: relative;
 }
-/* Styling for the color container in the projects section */
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
-/* Styling for project images in the projects section */
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
 }
-/* Styling for project titles in the projects section */
+
 .project-title {
   margin: 1rem;
   color: black;
 }
-/* Styling for project buttons in the projects section */
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
 }
 
-
 /* CONTACT */
-
-/* Styling for the contact section container */
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-/* Styling for the contact form */
+
 #contact-form {
-  width: 60%; 
-  max-width: 400px; 
-  margin: 0 auto; 
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
 }
-/* Styling for labels in the contact form */
+
 #contact-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
-/* Styling for input and textarea in the contact form */
+
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -366,18 +333,18 @@ article .icon {
   box-sizing: border-box;
   margin-bottom: 16px;
 }
-/* Styling for the upper container in the contact section */
+
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
-/* Styling for the container holding contact information */
+
 .contact-info-container {
   display: flex;
   align-items: center;
@@ -385,27 +352,293 @@ article .icon {
   gap: 0.5rem;
   margin: 1rem;
 }
-/* Styling for the paragraphs in the contact information container */
+
 .contact-info-container p {
   font-size: larger;
 }
-/* Styling for the contact icons */
+
 .contact-icon {
   cursor: default;
 }
-/* Styling for the email icon */
+
 .email-icon {
   height: 2.5rem;
 }
 
 /* FOOTER SECTION */
-
-/* Styling for the footer container */
 footer {
   height: 26vh;
   margin: 0 1rem;
 }
-/* Styling for paragraphs within the footer */
+
 footer p {
   text-align: center;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.photo {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.save-button:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.save-button {
+  margin-left: 10px;
+}
+
+h3 {
+  display: inline-block;
+  text-align: center;
+}
+
+.clearblog-but,
+.clearimg-but,
+.save-buttongallery,
+.save-blog-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 2);
+  border: solid #000;
+  border-width: 1px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.saved-img-container,
+.saved-blog-container {
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+/* Hover Styles for Various Buttons */
+.clearblog-but:hover,
+.clearimg-but:hover,
+.save-buttongallery:hover,
+.save-blog-button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Dropdown Menu Styles */
+/* Container for dropdown */
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Background color for dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  z-index: 1; /* Ensures dropdown appears above other content */
+}
+
+/* Display dropdown content on hover */
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+/* Like Button Styles */
+.like-button {
+  background-color: rgb(255, 255, 255); /* White background */
+  color: rgb(2, 2, 2); /* Black text color */
+  border: solid #000;
+  border-width: 1px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* Styles for like button when activated */
+.liked {
+  background-color: blue;
+  color: white;
+}
+
+/* Blog Post Container Styles */
+#blog-post1,
+#blog-post2,
+#blog-post3 {
+  margin: 35px;
+  padding: 35px;
+  border: #000 1px solid;
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the main container of blog posts */
+.blog-maincontainer {
+  justify-content: center;
+}
+
+/* Comment Section Styles */
+.comment-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-section h4 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+/* Styles for comment area */
+.comments {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for individual comment */
+.comment {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Styles for comment author section */
+.comment-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Styles for author name */
+.author-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Styles for comment date */
+.comment-date {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Styles for comment text */
+.comment-text {
+  margin-left: 50px;
+  padding: 5px;
+  background-color: #f2f3f5;
+  border-radius: 10px;
+}
+
+/* Styles for comment form textarea */
+.comment-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Styles for comment form button */
+.comment-form button {
+  background-color: #3e3e3e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for delete comment button */
+.delete-comment {
+  background-color: #f50303;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+/* Styles for comment author input field */
+.comment-author-input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: calc(100% - 10px);
+}
+/*Pulsate like button*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsate {
+  animation: pulse 2s alternate;
 }
